@@ -51,14 +51,14 @@ const Navbar = () => {
   return (
     <nav >
       <div >
-        <img src={Logo}  alt='No logo' className='imagelogo'/>
+       <a href='/Home' ><img src={Logo}  alt='No logo' className='imagelogo'/> </a>
       </div>
       <div className='navbar-links-container'>
-        <a href='' className='nav-link'>portfolio</a>
-        <a href='' className='nav-link'>about me</a>
-        <a href='' className='nav-link'>my blog</a>
-        <a href='' className='nav-link'>reviews</a>
-        <a href='' className='nav-link'>contact me</a>
+        <a href='/Portfolio' className='nav-link'>portfolio</a>
+        <a href='/About' className='nav-link'>about me</a>
+        <a href='/Myblog' className='nav-link'>my blog</a>
+        <a href='/Review' className='nav-link'>reviews</a>
+        <a href='/Contact' className='nav-link'>contact me</a>
         <a href=''><BsTwitter className='navbar-cart-icon' /></a>
         <a href='' > <IoIosBasketball className='navbar-cart-icon' /></a>
         <a href=''><SiBlogger className='navbar-cart-icon'/></a>

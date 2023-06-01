@@ -5,14 +5,16 @@ import natash from '../Assets/natasha.JPG'
 import banking from '../Assets/mobile_banking_app.jpg'
 import food from '../Assets/food.jpg'
 import greens from '../Assets/green.jpg'
+import { Table, Tr, Td } from 'react-super-responsive-table';
+import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 
 
 const Home = () => {
 
   const style = {backgroundImage: `url(${background})`,
   backgroundSize: 'cover',
-  width: '100%',
-  height: '100%'
+  width: '100%'
+ 
 };
 
 
@@ -22,21 +24,21 @@ const Home = () => {
    
     <div style={style}>
     <Navbar/>
-    <table className='center'>
-      <tr>
-        <td >
+    <Table className='center'>
+      <Tr>
+        <Td >
           <p className='rotate'>my process &nbsp; &nbsp; &nbsp;client reviews &nbsp; &nbsp; &nbsp; download cv</p>
-        </td>
-      <td>
+        </Td>
+      <Td>
         <div className="home-image-section">
           <img src={natash} alt='No Picture' className='image1' />
         </div>
-        </td>
-        <td >
+        </Td>
+        <Td >
           <p className='rotate'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<button className='blueline'></button>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;missied advice my it no sister</p>
-        </td>
+        </Td>
 
-        <td>
+        <Td>
     <div className="home-text-section">
           <h1 className="primary-heading">
             Why Me
@@ -72,10 +74,10 @@ const Home = () => {
           </div>
           
         </div>
-        </td>
+        </Td>
         
-        </tr>
-        </table>
+        </Tr>
+        </Table>
     </div>
   );
 }
